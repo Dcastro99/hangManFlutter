@@ -7,13 +7,22 @@ TextStyle retroStyle(double size, [Color? color, FontWeight? fw]) {
 }
 
 List wordlist = [
-  // 'FLUTTER',
-  // 'DART',
-  // 'ANDROID',
-  // 'IOS',
-  // 'MOBILE',
-  // 'DESKTOP',
-  'POOP'
+  'CAR',
+  'BAT',
+  'DOG',
+  'COOKIES',
+  'RUSTY',
+  'BEANS',
+  'POOP',
+  'BIRD',
+  'BANANA',
+  'TRUCK',
+  'ROBOT',
+  'POP',
+  'GRAMMY',
+  'DOODY',
+  'KITE',
+  'MARIO'
 ];
 
 List<String> letters = [

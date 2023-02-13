@@ -44,9 +44,11 @@ class _GameScreenState extends State<GameScreen> {
           return Dialog(
             child: Container(
                 width: MediaQuery.of(context).size.width / 2,
-                height: 180,
+                height: 200,
                 decoration: const BoxDecoration(
-                    color: Color.fromARGB(113, 7, 255, 222)),
+                  // borderRadius: BorderRadius.circular(10),
+                  color: Color.fromARGB(113, 7, 255, 222),
+                ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -65,6 +67,14 @@ class _GameScreenState extends State<GameScreen> {
                       'Your points: $points',
                       style: const TextStyle(
                           color: Color.fromARGB(255, 71, 71, 71),
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold),
+                      textAlign: TextAlign.center,
+                    ),
+                    Text(
+                      'The word was: $word',
+                      style: const TextStyle(
+                          color: Color.fromARGB(255, 249, 115, 26),
                           fontSize: 25,
                           fontWeight: FontWeight.bold),
                       textAlign: TextAlign.center,
@@ -112,6 +122,7 @@ class _GameScreenState extends State<GameScreen> {
         displayword += '? ';
       }
     }
+
     return displayword;
   }
 
