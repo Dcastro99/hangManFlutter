@@ -71,8 +71,16 @@ class _GameScreenState extends State<GameScreen> {
                           fontWeight: FontWeight.bold),
                       textAlign: TextAlign.center,
                     ),
+                    const Text(
+                      'The word was: ',
+                      style: TextStyle(
+                          color: Color.fromARGB(255, 71, 71, 71),
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold),
+                      textAlign: TextAlign.center,
+                    ),
                     Text(
-                      'The word was: $word',
+                      ' $word',
                       style: const TextStyle(
                           color: Color.fromARGB(255, 249, 115, 26),
                           fontSize: 25,
